@@ -1,15 +1,27 @@
 % Document information
-\newcommand{\titleinfo}{Zusammenfassung Template}
-\newcommand{\authorinfo}{Name Nachname}
+\newcommand{\titleinfo}{Zusammenfassung Digitaltechnik}
+\newcommand{\authorinfo}{Sandro Pedrett}
 \newcommand{\version}{1.0}
-\newcommand{\versioninfo}{FS21}
+\newcommand{\versioninfo}{HS20}
+
 % Header
 \include{Template/Header}
 
 % Document
 \begin{document}
 
-\tableofcontents
-\input{Sections/First Section}
+\input{Sections/Einführung}
+\input{Sections/Boolsche Algebra}
+\input{Sections/Logische Gatter}
+\input{Sections/Sequenzielle Schaltung}
+\input{Sections/Sequenzielle Systeme}
+\input{Sections/Finite State Machine}
+\newpage 
+\begin{landscape}
+    \section{Symbols}\label{symbols}
+    \begin{center}
+        \includegraphics[width=\linewidth]{./Images/Übersicht.png}
+    \end{center}
+\end{landscape}
 
 \end{document}

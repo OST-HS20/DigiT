@@ -1,0 +1,41 @@
+\section{Sequenzielle Systeme}
+\subsection{Zustandstabelle}
+\includegraphics[width=\columnwidth,keepaspectratio=true]{./Images/zustandstabelle.png}
+
+\subsection{Zustandsdiagramm}
+\begin{minipage}{\textwidth}	
+	\begin{minipage}{0.25\textwidth}
+		\includegraphics[width=\linewidth,keepaspectratio=true]{./Images/zustandsdiagram.png}
+	\end{minipage}%%% to prevent a space
+	\begin{minipage}{0.25\textwidth}
+		\begin{enumerate}
+			\item Zustände zeichnen 
+			\item Initial Zustand bestimmen
+			\item Eingänge systematisch auflisten
+			\item Zustandsübergänge bestimmen
+			\item Ausgänge einzeichnen
+		\end{enumerate}
+	\end{minipage}
+\end{minipage}
+
+\subsection{Zustandscodierung}
+\noindent\textbf{Binär Codierung}\\
+Kompakt und weniger FlipFlop als One-Hot/Cold.
+
+\begin{tabular}{ll}
+Anzahl Speicherstellen $k$:& $k = \lceil\ln(p)\rceil = \left\lceil \frac{\log_{10}(p)}{\log_{10}(2)}\right\rceil$\\
+maximale Anzahl Zustände $p$:& $p <= 2^k$ \\
+Möglichen Zustandscodierungen $q$:& $q = \frac{(2^k)!}{(2^k - p)!}$ 
+\end{tabular}\\ 
+
+\noindent\textbf{Gray Code}\\ 
+Spezialfall von Binärcodierung, es wechselt jeweils nur 1 Bit zwischen den Zuständen. \\
+
+\noindent\textbf{One-Hot/Cold Codierung}\\
+One-Hot (alles 1), One-Cold (alles 0) sind schneller als Binär-Codierungen.
+
+\begin{tabular}{ll}
+	Anzahl Speicherstellen $k$:& $k = p$\\
+	maximale Anzahl Zustände $p$:& $p = k$ \\
+	Möglichen Zustandscodierungen $q$:& $q = p!$ 
+\end{tabular}
